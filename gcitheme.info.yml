@@ -1,0 +1,17 @@
+name: Design
+description: This is my a theme for Google Code-In
+type: theme
+package: Custom
+core: 8.x
+
+regions:
+  header: Items of header
+  content: Items of content
+  sidebar_first: first sidebar
+  sidebar_second: second sidebar
+  footer: Items of footer
+  breadcrumbs: Items of braedcrumbs
+
+libraries:
+  - gcitheme/global-assets
+  - gcitheme/style

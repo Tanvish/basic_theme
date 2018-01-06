@@ -1,0 +1,26 @@
+<header id = "navbar-primary" class="navbar-default header" role = "navigation">
+	<div class="container">
+		{{ page.header }}
+	</div>
+</header>
+{{ page.breadcrump }}
+<main role = "main">
+	<div class="main-content">
+		{{ page.content }}
+	</div>
+	{% if page.content_first %}
+	<aside class="layout-sidebar_first" role = "complementory">
+		{{ page.sidebar_first }}
+	</aside>
+	{% endif %}
+	{% if page.content_second %}
+	<aside class="layout-sidebar_second" role = "complementary">
+		{{ page.sidebar_second }}
+	</aside>
+	{% endif %}
+</main>
+{% if page.footer %}
+<footer role = "contentinfo">
+	{{ page.footer }}
+</footer>
+{% endif %}
